@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="header">
+    <div class="logo">
+        <img [src]="image[0].image" alt="image[0].title">
+    </div>
+    <p>SERVICIO DE </p>
+    <h2>
+        {{ image[0].title }}
+    </h2>
+</div>
+<div class="list-cards">
+    <div routerLink="/info-user" class="card" *ngFor="let name of names">
+        <img src="../../assets/images/btnAdicionales/card.PNG" [alt]="name">
+        <p>{{name}}</p>
+    </div>
+</div>
